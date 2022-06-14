@@ -40,9 +40,8 @@ static std::mutex &getDebugMutext() {
 struct TBBContext {
   TBBContext(int numThreads)
       : numThreads(numThreads),
-        scheduler_handle(tbb::task_scheduler_handle::get()), arena(numThreads) {
-
-  }
+        scheduler_handle(/*tbb::task_scheduler_handle::get()*/),
+        arena(numThreads) {}
 
   ~TBBContext() {
     arena.terminate();
