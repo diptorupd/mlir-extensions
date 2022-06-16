@@ -35,7 +35,7 @@ You can now build numba_dpcomp. But, before you do so install some needed Python
 packages:
 
 ```bash
-conda create -n dpcompenv python=3.7 numba=0.53 scipy pybind11 tbb tbb-devel cmake pytest scikit-learn
+conda create -n dpcompenv python=3.7 numba=0.54 scipy pybind11 tbb tbb-devel cmake pytest scikit-learn ninja
 ```
 
 ## Build numba_dpcomp
